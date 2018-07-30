@@ -13,4 +13,9 @@
  *= require_self
  */
 
- @import 'bootstrap.min.css'
+ @import 'bootstrap.min.css';
+
+ .bkimg{
+    background-image: url('images/conocimiento.jpg');
+    height: 300px;
+ }
