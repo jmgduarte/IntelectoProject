@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# IntelectoProject
+Proyecto Para compartir Conocimiento
+>>>>>>> 110bd6336de018671eb9e22a0476ffed1a765f15
