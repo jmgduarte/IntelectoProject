@@ -23,12 +23,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Menu 4</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingresar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Registrarse</a>
-                    </li>
+                    <% if(current_user) %>
+                        <li class="nav-item">
+                            <span class='nav-link'><%= current_user.email %></span>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to "Salir", destroy_user_session_path, class: 'nav-link', method: :Delete %>
+                        </li>
+                    <% else %>
+                        <li class="nav-item">
+                            <%= link_to 'Ingresar', new_user_session_path, class: 'nav-link' %>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to 'Registrar', new_user_registration_path, class: 'nav-link' %>
+                        </li>
+                    <% end %>
                 </ul>
             </div>
         </nav>
